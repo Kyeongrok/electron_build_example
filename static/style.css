@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+}
+#list1, #list2{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+
+    /*border: 1px solid green;*/
+    /*width: 420px;
+    display: table;*/
+}
+
+#list1 li, #list2 li{
+
+    /*border: 1px solid green;*/
+    /*width: 420px;
+    display: table;*/
+    height: 153px;
+}
+
+#loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+
+#loading h2 {
+    margin: 0
+}
+
+.page-break {
+    clear: left;
+    display: block;
+    page-break-before: always;
+}
+
+@media print{
+    input, button {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Insert this line above script imports  -->
+        <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+        <script src="./libs/jquery3.js"></script>
+        <script src="./libs/xlsx.core.min.js"></script>
+        <script src="./libs/cpexcel.js"></script>
+        <script src="./libs/print.js"></script>
+        <link rel="stylesheet" href="./static/style.css">
+
+        <!-- Insert this line after script imports -->
+        <script>if (window.module) module = window.module;</script>
+    </head>
+    <body>
+        <div class="form-group">
+            <input type="file" class="form-control" id="fileInput" />
+        </div>
+        <div id="loading">
+            <h2>잠시만 기다려 주세요..</h2>
+        </div>
+        <button id="printBtn" >프린트</button>
+
+        <ul id="list1">
+        </ul>
+        <ul id="list2">
+        </ul>
+
+    </body>
+
+</html>
